@@ -1,0 +1,14 @@
+{
+  "name": "curso-react",
+  "version": "1.0.0",
+  "description": "Aulas de React - PWEB II",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Olinda",
+  "license": "ISC",
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.2.3"
+  }
+}
