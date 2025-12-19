@@ -190,3 +190,7 @@ export default App;
 
 ## Lista de exercícios
 
+- Crie um repositório no GitHub com o as respostas dos exercícios propostos.
+
+1. Crie uma aplicação React que gerencie uma lista de tarefas (to-do list) usando o hook `useState`. A aplicação deve permitir adicionar, remover e marcar tarefas como concluídas.
+2. Implemente uma aplicação que, dada o código do funcionario, lance sua presença diária em um sistema de ponto eletrônico. Utilize o hook `useState` para gerenciar o estado das marcações de ponto.
