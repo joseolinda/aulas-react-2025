@@ -1,5 +1,6 @@
 import { useState } from "react";
 import listVideos from "./listVideos";
+import Video from "./Video";
 import "./style.css";
 
 
@@ -27,26 +28,13 @@ export default function App() {
       <h2 className="title">Videos Likes</h2>
 
       {videos.map((v) => (
-        <div className="card" key={v.id}>
-          <div className="video">{v.title}</div>
-
-          <div className="caption">{v.caption}</div>
-          <div className="description">{v.description}</div>
-
-          <div className="actions">
-            <button onClick={() => toggleLike(v.id)}>
-              {v.liked ? "🩶 Descurtir" : "❤️ Curtir"} <span className="count">{v.likes}</span>
-            </button>
-
-            <button onClick={() => inc(v.id, "comments")}>
-              💬 Comentar <span className="count">{v.comments}</span>
-            </button>
-
-            <button onClick={() => inc(v.id, "shares")}>
-              🔁 Compartilhar <span className="count">{v.shares}</span>
-            </button>
-          </div>
-        </div>
+        <Video 
+          key={v.id}
+          id={v.id}
+          caption={v.caption}
+          comments={v.comments}
+          description={v.description}
+        />
       ))}
     </div>
   );
